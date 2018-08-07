@@ -1,0 +1,102 @@
+{
+  "residents" : [
+    {
+      "name": "Ana",
+      "who_pays":"ANA CARLA",
+      "number" : 1
+    },
+    {
+      "name": "Perdido",
+      "who_pays" : "MARCOS VINICIOS,MESMA TITULARIDADE",
+      "number" : 2
+    },
+    {
+      "name": "Vaca",
+      "who_pays":"MATHEUS AVILA",
+      "number" : 3
+    },
+    {
+      "name": "Avatar",
+      "who_pays":"DEISE CABRAL",
+      "number" : 4
+    },
+    {
+      "name": "Veridiane",
+      "who_pays":"dont-know",
+      "number" : 5
+    },
+    {
+      "name": "Frango",
+      "who_pays":"IGOR AVILA",
+      "number" : 6
+    },
+    {
+      "name": "Tati",
+      "who_pays" : "dont-know",
+      "number" : 7
+    },
+    {
+      "name": "Nati",
+      "who_pays":"NATALIA MAURICE",
+      "number" : 8
+    },
+    {
+      "name": "Raul",
+      "who_pays":"RAUL HENTRINGER",
+      "number" : 9
+    },
+    {
+      "name": "Guioza",
+      "who_pays":"KATIA MASSAE",
+      "number" : 10
+    }
+  ],
+
+  "house_bills": [
+    {
+      "name": "Água",
+      "extr_name": "SANASA",
+      "descr":"",
+      "number" : 1
+    },
+    {
+      "name": "Energia",
+      "extr_name": "CTA ENERGIA ELETRICA",
+      "descr":"",
+      "number" : 2
+    },
+    {
+      "name": "NET",
+      "extr_name": "TV A CABO",
+      "descr":"",
+      "number" : 3
+    },
+    {
+      "name": "Banco Taxa",
+      "extr_name": "TARIFA MENSALIDADE PACOTE",
+      "descr":"",
+      "number" : 7
+    },
+    {
+      "name": "Banco Fatura",
+      "extr_name": "FATURA CARTAO",
+      "descr":"Fatura Cartão",
+      "number" : 7
+    },
+    {
+      "name": "Empregada",
+      "extr_name": "don' know",
+      "descr":"Vania",
+      "number" : 5
+
+    },
+    {
+      "name": "Itens para casa",
+      "extr_name": "ATACADAO,SUPERMERCADOS",
+      "descr":"Vania",
+      "number" : 4
+
+    }
+  ]
+
+}
