@@ -32,7 +32,7 @@ def main():
 
     args = args_parser.parse_args()
 
-    extract_parser = SantanderParser("extrato_julho.xls")
+    extract_parser = SantanderParser("extrato_janeiro.xls")
 
     print("ALL DEBITS: ")
     dict_pretty_print(extract_parser.all_debits)

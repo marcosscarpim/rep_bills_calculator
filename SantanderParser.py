@@ -31,7 +31,7 @@ class SantanderParser(AbstractExtractParser):
             date = worksheet.cell(r, 0).value
             description = worksheet.cell(r, 1).value
             balance = worksheet.cell(r, 6).value
-            unique_key = date.strip() + "-" + balance.strip() + "-" + description
+            unique_key = str(date).strip() + "-" + str(balance).strip() + "-" + description
 
             # if credit line is not empty, it mean it is a credit
             if worksheet.cell(r, 4).value is not None and worksheet.cell(r, 4).value != " ":

@@ -47,9 +47,9 @@ class AbstractExtractParser(ABC):
                 for pay_method in pay_methods:
                     # if any pay_method in cDescription
                     if pay_method in cDescription:
-                        parsed_payment = float(cValue.strip().
-                                                 replace(".", "").
-                                                 replace(",", "."))
+                        parsed_payment = cValue#float(str(cValue).strip().
+                                         #        replace(".", "").
+                                         #        replace(",", "."))
                         # allow residents two perform two payments in a month
                         if resident["name"] in residents_payments:
                             residents_payments[resident["name"]] += parsed_payment
@@ -80,9 +80,9 @@ class AbstractExtractParser(ABC):
                 for bill_name in bill_names:
                     # if any bill_name in dDescription
                     if bill_name in dDescription:
-                        parsed_bill = float(dValue.strip().
-                                            replace(".", "").
-                                            replace(",", "."))
+                        parsed_bill = dValue#float(str(dValue).strip().
+                                      #      replace(".", "").
+                                      #      replace(",", "."))
                         # allow more than one bill type
                         if bill["name"] in defined_debits:
                             defined_debits[bill["name"]] += -parsed_bill
