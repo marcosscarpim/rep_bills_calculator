@@ -15,7 +15,7 @@ from googleapiclient import errors
 class SpreadsheetComm(object):
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
               'https://www.googleapis.com/auth/drive.file']
-    CLIENT_SECRET_FILE = 'service_secret.json'
+    CLIENT_SECRET_FILE = 'rep-bills-calculator-e298e2538d86.json'
     APPLICATION_NAME = 'DF-spreadsheet_comm'
     DISCOVERY_URL = ('https://sheets.googleapis.com/$discovery/rest?'
                      'version=v4')
@@ -27,12 +27,6 @@ class SpreadsheetComm(object):
 
         self.service = discovery.build('sheets', 'v4', http=conn,
                                        discoveryServiceUrl=SpreadsheetComm.DISCOVERY_URL)
-
-    # returns all rows from a sheet, from column A till column O (last column available)
-    # params: - id : spreadsheet id to apply
-    #         - name : name of the tab you want
-    def getAllPropertyRows(self, id, name):
-        return self.getValuesInRange(id, name, 'A1:O')
 
     # returns all rows from a sheet in range specified
     # params: - id : spreadsheet id to apply
@@ -74,10 +68,10 @@ class SpreadsheetComm(object):
         result = self.service.spreadsheets().values().batchUpdate(spreadsheetId=id,
                                                                   body=body).execute()
 
-        # we hope all has just gone right, because batchUpdate looks to be assynchronous
+        # we hope all has just gone right, because batchUpdate is asynchronous
         return True
 
-    # write to a whole column
+    # write to a whole row
     # params: - id : spreadsheet id to apply
     #         - name : name of the sheet tab
     #         - column : column to be written (Ex.: J)
@@ -103,5 +97,5 @@ class SpreadsheetComm(object):
 
         self.service.spreadsheets().values().batchUpdate(spreadsheetId=id, body=body).execute()
 
-        # we hope all has just gone right, because batchUpdate looks to be assynchronous
+        # we hope all has just gone right, because batchUpdate is asynchronous
         return True

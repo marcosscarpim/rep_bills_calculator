@@ -11,8 +11,8 @@
       "number" : 2
     },
     {
-      "name": "Vaca",
-      "who_pays":"MATHEUS AVILA",
+      "name": "Biel",
+      "who_pays" : "FABIANA DA SILVA",
       "number" : 3
     },
     {
@@ -31,8 +31,8 @@
       "number" : 6
     },
     {
-      "name": "Biel",
-      "who_pays" : "FABIANA DA SILVA",
+      "name": "Vaca",
+      "who_pays":"MATHEUS AVILA",
       "number" : 7
     },
     {
@@ -86,16 +86,14 @@
     {
       "name": "Empregada",
       "extr_name": "don' know",
-      "descr":"Vania",
+      "descr":"",
       "number" : 5
-
     },
     {
       "name": "Itens para casa",
       "extr_name": "ATACADAO,SUPERMERCADOS",
-      "descr":"Vania",
+      "descr":"",
       "number" : 4
-
     }
   ]
 
